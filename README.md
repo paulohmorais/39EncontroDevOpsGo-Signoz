@@ -1,4 +1,4 @@
-# 39EncontroDevOpsGo-Signoz
+# 39º Encontro DevOpsGo - SigNoz
 
 ## To start redis
 
@@ -17,7 +17,9 @@ git clone -b main https://github.com/SigNoz/signoz.git && cd signoz/deploy/
 docker-compose -f docker/clickhouse-setup/docker-compose.yaml up -d
 ```
 
-## To start app with instrumentation
+SigNoz frontend [http://localhost:3301/](http://localhost:3301/)
+
+## To start app with Open Telemetry instrumentation
 
 `node -r ./tracing.js app.js`
 

@@ -53,7 +53,6 @@ app.get(`/api2`, async (req, res) => {
 
 app.get(`/api1-cached`, async (req, res) => {
   try {
-    // Verifica se o valor existe no Redis
     const cachedData = await redis.get('api1-cached');
 
     if (cachedData) {
